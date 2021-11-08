@@ -1,4 +1,4 @@
-{application, relx,
+{application, fast_server_config,
   [{description, "Configuración rapida de enrutamiento en puerto 4000"},
     {pkg_name, "fast_server_config"},
    {vsn, "3.5.0"},
