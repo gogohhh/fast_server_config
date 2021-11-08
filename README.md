@@ -5,12 +5,12 @@
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `people` to your list of dependencies in `mix.exs`:
+by adding `fast_server_config` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:people, "~> 0.1.0"}
+    {:fast_server_config, "~> 0.1.0"}
   ]
 end
 ```
