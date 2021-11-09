@@ -4,7 +4,7 @@ defmodule People.MixProject do
   def project do
     [
       app: :fast_server_config,
-      version: "1.1.0",
+      version: "1.1.2",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env == :prod,
