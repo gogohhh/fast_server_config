@@ -10,7 +10,8 @@ defmodule People.MixProject do
       build_embedded: Mix.env == :prod,
       deps: deps(),
       description: description(),
-      package: package()
+      package: package(),
+      aliases: aliases()
     ]
   end
 
@@ -45,6 +46,24 @@ defmodule People.MixProject do
       files: ~w(lib src .formatter.exs mix.exs README* src),
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/gogohhh/fast_server_config"}
+    ]
+  end
+
+  # Aliases are shortcuts or tasks specific to the current project.
+  # For example, to install project dependencies and perform other setup tasks, run:
+  #
+  #     $ mix setup
+  #
+  # See the documentation for `Mix` for more info on aliases.
+  defp aliases do
+    [
+      setup: ["deps.get", "cmd --cd assets npm install"],
+      "assets.deploy": [
+        "cmd --cd assets npm run deploy",
+        "esbuild default --minify",
+        "cmd cp -r assets/static priv",
+        "phx.digest"
+      ]
     ]
   end
 end
