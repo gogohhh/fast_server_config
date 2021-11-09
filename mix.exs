@@ -4,7 +4,7 @@ defmodule People.MixProject do
   def project do
     [
       app: :fast_server_config,
-      version: "1.1.2",
+      version: "1.1.3",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       build_embedded: Mix.env == :prod,
@@ -43,7 +43,7 @@ defmodule People.MixProject do
       # This option is only needed when you don't want to use the OTP application name
       name: "fast_server_config",
       # These are the default files included in the package
-      files: ~w(lib src .formatter.exs mix.exs README* src),
+      files: ~w(lib src .formatter.exs mix.exs README* assets),
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/gogohhh/fast_server_config"}
     ]

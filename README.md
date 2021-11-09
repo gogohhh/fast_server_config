@@ -10,7 +10,7 @@ by adding `fast_server_config` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:fast_server_config, "~> 0.1.0"}
+    {:fast_server_config, "~> 1.1.3"}
   ]
 end
 ```
